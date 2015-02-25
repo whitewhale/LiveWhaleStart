@@ -6,6 +6,7 @@ body {
     color: #555;
 }
 
+
 h1,
 .h1,
 h2,
@@ -22,17 +23,17 @@ h6,
     font-weight: normal;
     color: #333;
 }
+
 /*
  * Masthead for nav
  */
-
 .nav-masthead {
     background-color: #428bca;
     -webkit-box-shadow: inset 0 -2px 5px rgba(0, 0, 0, .1);
     box-shadow: inset 0 -2px 5px rgba(0, 0, 0, .1);
     margin-bottom: 40px;
 
-    .lw_widget {
+    .lw_widget_navigation {
         ul, li {
             margin: 0;
             padding: 0;
@@ -44,34 +45,35 @@ h6,
             float: left;
             clear: none;
         }
-    }
-    .nav-item {
-        position: relative;
-        display: inline-block;
-        padding: 10px;
-        font-weight: 500;
-        color: #cdddeb;
-        &:hover, &:focus {
-            color: #fff;
-            text-decoration: none;
+        > ul > li {
+            a {
+                position: relative;
+                display: inline-block;
+                padding: 10px;
+                font-weight: 500;
+                color: #cdddeb;
+                &:hover, &:focus {
+                    color: #fff;
+                    text-decoration: none;
+                }
+            }
+            &.lw_active {
+                color: #fff;
+                > a:after {
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                    width: 0;
+                    height: 0;
+                    margin-left: -5px;
+                    vertical-align: middle;
+                    content: " ";
+                    border-right: 5px solid transparent;
+                    border-bottom: 5px solid;
+                    border-left: 5px solid transparent;
+                }
+            }
         }
-    }
-    /* Active state gets a caret at the bottom */
-    .nav .lw_active .nav-item {
-        color: #fff;
-    }
-    .nav .lw_active .nav-item:after {
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        width: 0;
-        height: 0;
-        margin-left: -5px;
-        vertical-align: middle;
-        content: " ";
-        border-right: 5px solid transparent;
-        border-bottom: 5px solid;
-        border-left: 5px solid transparent;
     }
 }
 
@@ -89,12 +91,12 @@ h6,
     }
 }
 
-.nav-sidebar {
+.nav-sidebar .lw_widget_navigation {
     ul, li {
         margin: 0;
         padding: 0;
     }
-    ul.lw_widget_results > li {
+    > ul > li {
         display: none;
         > a {
             display: none;
@@ -105,7 +107,6 @@ h6,
         .lw_subnav {
             margin: 0;
         }
-
         li {
             margin: 0;
             padding: 0;

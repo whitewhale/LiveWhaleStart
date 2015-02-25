@@ -1,7 +1,7 @@
 <div class="nav-masthead">
   <div class="container">
 	<nav class="nav">
-		<widget id="8_navigation_main_navigation"></widget>
+		<widget type="navigation"><arg id="main_nav">me</arg></widget>
 	</nav>
   </div>
 </div>
