@@ -4,6 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <widget type="file"><arg id="path">/includes/head.html</arg></widget>
+<meta name="pagename" content="Basic Page (no sidebar)"/>
 </head>
  <body>
   	<widget type="file"><arg id="path">/includes/header.php</arg></widget>
