@@ -15,91 +15,97 @@
         <arg id="path">/includes/header.php</arg>
     </widget>
 
+   <div class="content container cf">
+		<div class="row">
+			<div class="col-sm-3">
+				<div class="news_image">
+					<xphp content="true">
+						<if var="news_image"/>
+						<content>          
+							<div class="image_bordered lw_controls_top">
+							  <xphp var="news_image" inner="true" />
+							</div>  
+						</content>
+					</xphp>
+				</div>  			
+			
+				<xphp content="true">
+					<if var="news_location"/>
+					<content>
+						<div class="news_location">
+						<h2>Location: <span><xphp var="news_location" inner="true"/></span></h2>
+						</div>  
+					</content>
+				</xphp>
+
+				<div class="details_map"></div>
+
+				<xphp content="true">
+					<if var="news_contact_info"/>	
+					<content>					
+						<div class="contact_location lw_widget">
+							<h3>News Contact</h3>
+							<xphp var="news_contact_info" inner="true"/>
+						</div>	
+					</content>	
+				</xphp>
+				
+				<xphp content="true">
+					<if var="news_related_content"/>
+					<content>
+						<div class="related_links">
+							<h2>Related Links</h2>
+							<xphp var="news_related_content" inner="true"/>
+						</div>
+					</content>
+				</xphp>
+			</div>
+			<div class="col-sm-9">
+				<header class="title">
+				  <h1>
+					<xphp var="news_headline"/>
+				  </h1>
+				</header>
+				
+				<div id="main">
+				
+					<h2 class="date_title"><xphp var="news_date"/></h2>
+						
+					<div class="news_summary">
+						<xphp var="news_summary"/>
+					</div>
+					<div class="news_body">
+						<xphp var="news_body"/>
+					</div>			
+		
+					<xphp content="true">
+						<if var="news_url"/>
+						<content>
+							<div class="news_url">Link: <xphp var="news_url" inner="true"/></div>
+						</content>
+					</xphp>
+					<xphp var="news_comments_form"/> <xphp var="news_comments" />			
+				
+					<div class="saveandshare">
+						<xphp var="news_share"/>
+					</div>
+								
+					<div class="news_last_modified" style="display:none;">
+						Last modified on <xphp var="news_last_modified"/> by <xphp var="news_last_editor"/>.
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
     <div class="content container cf">
-        <nav>
-            <xphp var="group_navigation"/>
-        </nav>
-			
         <article>
-	        <header class="title">
-	          <h1>
-	            <xphp var="news_headline"/>
-	          </h1>
-	        </header>
-        	
-			<div id="main">
-			
-	            <h2 class="date_title"><xphp var="news_date"/></h2>
-					
-	            <div class="news_summary">
-	                <xphp var="news_summary"/>
-	            </div>
-	            <div class="news_body">
-	                <xphp var="news_body"/>
-	            </div>			
-	
-	            <xphp content="true">
-	                <if var="news_url"/>
-	                <content>
-	                    <div class="news_url">Link: <xphp var="news_url" inner="true"/></div>
-	                </content>
-	            </xphp>
-	            <xphp var="news_comments_form"/> <xphp var="news_comments" />			
-	        
-	            <div class="saveandshare">
-	                <xphp var="news_share"/>
-	            </div>
-	                        
-	            <div class="news_last_modified" style="display:none;">
-	                Last modified on <xphp var="news_last_modified"/> by <xphp var="news_last_editor"/>.
-	            </div>
-	            
-	        </div>
             
         </article>
 
         <aside id="sidebar" class="optional">
-            <div class="news_image">
-                <xphp content="true">
-                    <if var="news_image"/>
-                    <content>          
-                        <div class="image_bordered lw_controls_top">
-                          <xphp var="news_image" inner="true" />
-                        </div>  
-                    </content>
-                </xphp>
-            </div>  			
-        
-            <xphp content="true">
-                <if var="news_location"/>
-                <content>
-                    <div class="news_location">
-                    <h2>Location: <span><xphp var="news_location" inner="true"/></span></h2>
-                    </div>  
-                </content>
-            </xphp>
-
-            <div class="details_map"></div>
-
-            <xphp content="true">
-                <if var="news_contact_info"/>	
-                <content>					
-                    <div class="contact_location lw_widget">
-                        <h3>News Contact</h3>
-                        <xphp var="news_contact_info" inner="true"/>
-                    </div>	
-                </content>	
-            </xphp>
-            
-            <xphp content="true">
-                <if var="news_related_content"/>
-                <content>
-                    <div class="related_links">
-                        <h2>Related Links</h2>
-                        <xphp var="news_related_content" inner="true"/>
-                    </div>
-                </content>
-            </xphp>
 
         </aside>
     </div>	

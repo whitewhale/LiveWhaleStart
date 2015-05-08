@@ -18,31 +18,21 @@
   </head>
   <body>
     <widget type="file">
-	         <arg id="path">/includes/header.php</arg>
-	    </widget>
-    <div class="content container cf">
-      <nav>
-        <xphp var="group_navigation"/>
-      </nav>
-      <article>
-        <header class="title">
-          <h1>
-            <xphp var="page_title"/>
-          </h1>
-        </header>
-        <div id="main" class="editable">
-          <widget id="8_blurbs_moby_dick_lost_quotes"></widget>
-          <p>
-            — Herman Melville,&#160;<em>Moby Dick</em>
-          </p>
-        </div>
-      </article>
-      <aside id="sidebar" class="editable optional">
-        <p>
-          <a title="By Joseph O. Eaton and an unknown etcher (Library of Congress) [Public domain], via Wikimedia Commons" href="http://commons.wikimedia.org/wiki/File%3AHerman_Melville.jpg"><img src="//upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Herman_Melville.jpg/256px-Herman_Melville.jpg" alt="Herman Melville" width="160" /></a>
-        </p>
-      </aside>
-    </div><widget type="file">
+		<arg id="path">/includes/header.php</arg>
+	</widget>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<header class="title">
+				  <h1>Page Not Found</h1>
+				</header>
+				<div id="main" class="editable">
+			</div>
+		</div>
+	</div>
+
+	<widget>
         <arg id="path">/includes/footer.php</arg>
      </widget>
   </body>
