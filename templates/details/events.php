@@ -7,12 +7,12 @@
 <!--[if gt IE 8]><!--><html xmlns="http://www.w3.org/1999/xhtml"><!--<![endif]-->
 <head>
     <title><xphp var="events_title"/>: <xphp var="group_title"/></title>
-    <widget type="file"><arg id="path">/includes/head.html</arg></widget>
+    <widget type="file"><arg id="path">/_ingredients/includes/head.html</arg></widget>
     <widget type="events_details" priority="high"/>
 </head>
 <body class="details events">
   	<widget type="file">
-		<arg id="path">/includes/header.php</arg>
+		<arg id="path">/_ingredients/includes/header.php</arg>
 	</widget>
 	<div class="container">
 		<div class="row">
@@ -107,7 +107,7 @@
 	</div>
 
   	<widget type="file">
-		<arg id="path">/includes/footer.php</arg>
+		<arg id="path">/_ingredients/includes/footer.php</arg>
 	</widget>
 </body>
 </html>

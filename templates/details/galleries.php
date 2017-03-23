@@ -3,7 +3,7 @@
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <widget type="file"><arg id="path">/includes/head_top.html</arg></widget>
+    <widget type="file"><arg id="path">/_ingredients/includes/head_top.html</arg></widget>
 	<meta name="description" content="">
 	<meta name="author" content="">
 
@@ -11,12 +11,12 @@
       <xphp var="page_title"/> : <xphp var="galleries_title"/>
     </title>
 	
-	<widget type="file"><arg id="path">/includes/head_bottom.html</arg></widget>
+	<widget type="file"><arg id="path">/_ingredients/includes/head_bottom.html</arg></widget>
 	<widget type="galleries_details" priority="high"></widget>	
 </head>
  <body>
   	<widget type="file">
-		<arg id="path">/includes/header.php</arg>
+		<arg id="path">/_ingredients/includes/header.php</arg>
 	</widget>
 
 	<div class="container">
@@ -81,7 +81,7 @@
 	</div>
 
   	<widget type="file">
-		<arg id="path">/includes/footer.php</arg>
+		<arg id="path">/_ingredients/includes/footer.php</arg>
 	</widget>
 	<script>
 		$('.detail_gallery').lwGallery();

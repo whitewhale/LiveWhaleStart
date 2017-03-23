@@ -14,11 +14,11 @@
     </title>
     <meta name="description" content="" />
     <meta name="keywords" content="" />
-    <widget type="file"><arg id="path">/includes/head.html</arg></widget>
+    <widget type="file"><arg id="path">/_ingredients/includes/head.html</arg></widget>
   </head>
   <body>
     <widget type="file">
-	         <arg id="path">/includes/header.php</arg>
+	         <arg id="path">/_ingredients/includes/header.php</arg>
 	    </widget>
     <div class="content container cf">
       <nav>
@@ -72,7 +72,7 @@
         </header>
       </aside>
     </div><widget type="file">
-        <arg id="path">/includes/footer.php</arg>
+        <arg id="path">/_ingredients/includes/footer.php</arg>
      </widget>
   </body>
 </html>
