@@ -5,9 +5,10 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <widget type="file"><arg id="path">/_ingredients/includes/head.html</arg></widget>
-    <meta name="pagename" content="Basic Page (no sidebar)" />
+    
     <title></title>
-  </head>
+  	<meta name="pagename" content="Basic Page (no sidebar)"/>
+</head>
   <body>
     <widget type="file"><arg id="path">/_ingredients/includes/header.php</arg></widget>
     <div class="container">
